@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backnet.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="14.0" prefHeight="534.0" prefWidth="613.0">
+         <children>
+            <TextField fx:id="TxLearn" alignment="CENTER" cacheShape="false" focusTraversable="false" layoutX="188.0" layoutY="368.0" pickOnBounds="false" prefHeight="25.0" prefWidth="69.0" text="0.2">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="ErroQ" alignment="CENTER" cacheShape="false" focusTraversable="false" layoutX="188.0" layoutY="426.0" pickOnBounds="false" prefHeight="25.0" prefWidth="69.0" text="0.05">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Label layoutX="24.0" layoutY="372.0" text="Taxa de Aprendizagem" />
+            <Label layoutX="32.0" layoutY="430.0" text="Erro Quadratico " />
+            <Button fx:id="btnBin" layoutX="286.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Treinar RNA Binaria" />
+            <Button fx:id="btnBip" layoutX="285.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Treinar RNA Bipolar" />
+            <TextArea editable="false" layoutY="8.0" prefHeight="333.0" prefWidth="600.0" style="-fx-text-fill: navy; -fx-background-color: darkcyan;" styleClass="-fx-text-fill:" text="Trabalho de BackPropagation&#10;Disciplina: COMP0272 - Redes Neurais&#10;Prof.: Luiz Brunelli&#10;Aluno : Keomas da Silva Santos&#10;Resoluçao:&#10;RNA- Backpropagation: XOR, binária (entradas e saídas).&#10;RNA- Backpropagation: XOR, bipolar (entradas e saídas).&#10;&#10;Camada entrada-escondida:&#10;-0,3378 0,2771  0,2859  -0,3329  Bias para 4 neurônios da camada escondida&#10;0,1970  0,3191  -0,1448  0,3594   Pesos da 1ª entrada – camada escondida&#10;0,3099 0,1904 -0,0347  -0,4861   Pesos da 2ª entrada – camada escondida&#10;&#10;Camada escondida-saída:&#10;-0,1401   Bias para a saída&#10;0,4919    Peso do 1° neurônio da camada escondida - saída&#10;-0,2913   Peso do 2° neurônio da camada escondida - saída&#10;-0,3979   Peso do 3° neurônio da camada escondida - saída&#10;0,3581     Peso do 4° neurônio da camada escondida - saída">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextArea>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
